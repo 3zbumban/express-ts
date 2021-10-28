@@ -27,7 +27,7 @@
     "start": "npm run build && node ./build/index.js",
     "start:prod": "node ./build/index.js",
     "dev": "nodemon ./src/index.ts",
-    "test": "nyc mocha -r ts-node/register ./test/**/*.test.ts"
+    "test": "nyc --reporter=html mocha -r ts-node/register ./test/**/*.test.ts"
   },
   "keywords": [],
   "author": "",
